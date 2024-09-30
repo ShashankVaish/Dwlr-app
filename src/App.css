@@ -1,0 +1,39 @@
+.app-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.styled-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.styled-button:hover {
+  background-color: #45a049;
+}
+
+.result-text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.data-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid black;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
