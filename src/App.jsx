@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css'; // Import the CSS file
+import Navbar from './Components/Navbar';
 
 const App = () => {
   const [text, setText] = useState("DWLR 1443 is disabled");
@@ -16,11 +17,12 @@ const App = () => {
     timestamp: new Date().toLocaleString(),
     waterLevel: `${(Math.random() * (6 - 3) + 3).toFixed(1)} m`, // Random water level between 3.0 and 6.0
     battery: `${(Math.random() * (100 - 50) + 50).toFixed(0)}%`,  // Random battery percentage between 50% and 100%
-    status: Math.random() > 0.7 ? "Critical" : Math.random() > 0.5 ? "Low Battery" : "Operational", // Random status
+    status: Math.random() > 0.7 ? "Active" : Math.random() > 0.5 ? "Active" : "Inactive", // Random status
   }));
 
   return (
     <>
+    <Navbar/>
       <div className="app-container">
         <button className="styled-button" onClick={() => { setEnable(true); playMusic(); }}>
           Search
